@@ -1,0 +1,4 @@
+1. - 14. (x,y) = 1107,75
+15. (x,y) = 1107,71
+
+mora se izraditi ponovo jer je scaling sjebao stvar
