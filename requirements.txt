@@ -1,0 +1,5 @@
+opencv_python
+openpyxl
+pandas
+pygame
+matplotlib
