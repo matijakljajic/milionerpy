@@ -3,7 +3,7 @@
   <h1 align="center" style="margin: 0 auto 0 auto;">ŽELITE LI DA POSTANETE MILIONER?</h1>
   </p>
 
-[![🇷🇸](https://img.shields.io/badge/🇷🇸-2ea44f?style=for-the-badge)]() [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)]()
+[![🇷🇸](https://img.shields.io/badge/🇷🇸-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.rs.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)]()
 
 A rendition of the popular TV quiz "Who wants to be a millionaire?" for one of the uni courses called "Seminarski rad A". The game and the questions are in Serbian. I hope you like it.
 
