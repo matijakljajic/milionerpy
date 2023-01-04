@@ -72,7 +72,7 @@ def drawText(surface, text, color, rect, font, align=textAlignLeft, aa=True, bkg
         return remainingText
     return ""
 
-def Endcard(pygame, window, width, height, counterquestion, channel1, clock):
+def Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije):
     channel1.fadeout(5)
 
     endcard = pygame.image.load('resources/endcard/endcard.jpg')
@@ -82,10 +82,14 @@ def Endcard(pygame, window, width, height, counterquestion, channel1, clock):
     closeh = pygame.image.load('resources/endcard/exith.png')
     font = pygame.font.Font("resources/Rubik.ttf", 30)
 
+    for i in range(0, len(opcije)):
+            if opcije[i][1] == 'T':
+                ti = i
+
     if (counterquestion <= 4):
-        string = "Nažalost ste samo stigli do " + str(counterquestion) + ". pitanja. Više sreće drugi put."
+        string = "Nažalost ste samo stigli do " + str(counterquestion) + ". pitanja, a tačan odgovor je bio \"" + str(opcije[ti][0]) + "\""
     elif (counterquestion <= 9):
-        string = "Stigli ste do " + str(counterquestion) + ". pitanja, ali znamo da možete bolje."
+        string = "Stigli ste do " + str(counterquestion) + ". pitanja, a tačan odgovor je bio \"" + str(opcije[ti][0]) + "\""
     elif (counterquestion <= 14):
         string = "Zamalo do pobede. Stigli ste do " + str(counterquestion) + ". pitanja."
     else:
@@ -173,9 +177,18 @@ def game(window, width, height, clock):
     text = timerfont.render(str(counterclock), True, (184, 193, 209))
 
     # question load
-    qna = pandas.read_excel("resources/pitanja.xlsx", "sheet", usecols = "A,B,C,D,E")
-    qnad = qna.to_dict('index')
-    random.shuffle(qnad)
+    qna1 = pandas.read_excel("resources/pitanja.xlsx", "1", usecols = "A,B,C,D,E")
+    qnad1 = qna1.to_dict('index')
+    qna3 = pandas.read_excel("resources/pitanja.xlsx", "3", usecols = "A,B,C,D,E")
+    qnad3 = qna3.to_dict('index')
+    qna6 = pandas.read_excel("resources/pitanja.xlsx", "6", usecols = "A,B,C,D,E")
+    qnad6 = qna6.to_dict('index')
+    qna11 = pandas.read_excel("resources/pitanja.xlsx", "11", usecols = "A,B,C,D,E")
+    qnad11 = qna11.to_dict('index')
+    random.shuffle(qnad1)
+    random.shuffle(qnad3)
+    random.shuffle(qnad6)
+    random.shuffle(qnad11)
 
 
     # intro
@@ -242,16 +255,31 @@ def game(window, width, height, clock):
             window.blit(currentq[14], (1107,51))
         elif(counterquestion < 14):
             window.blit(currentq[counterquestion], (1107,55))
-        else: Endcard(pygame, window, width, height, counterquestion, channel1, clock)
-        q = qnad[counterquestion]["PITANJE"]
-        q_rect = pygame.Rect(240, 430, 1045-240, 480-420)
-        drawText(window, q, "white", q_rect, qafont, textAlignCenter, True)
+        else: Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+        
         if(counterquestion == dcao):
-            opcije = [[qnad[counterquestion]["OPCIJA1"],'T'], [qnad[counterquestion]["OPCIJA2"],'F'], [qnad[counterquestion]["OPCIJA3"],'F'], [qnad[counterquestion]["OPCIJA4"],'F']]
-            dcao += 1
+            if(counterquestion <= 2):
+                q = qnad1[counterquestion]["PITANJE"]
+                opcije = [[qnad1[counterquestion]["OPCIJA1"],'T'], [qnad1[counterquestion]["OPCIJA2"],'F'], [qnad1[counterquestion]["OPCIJA3"],'F'], [qnad1[counterquestion]["OPCIJA4"],'F']]
+                dcao += 1
+            elif(counterquestion > 2 and counterquestion <= 5):
+                q = qnad3[counterquestion]["PITANJE"]
+                opcije = [[qnad3[counterquestion]["OPCIJA1"],'T'], [qnad3[counterquestion]["OPCIJA2"],'F'], [qnad3[counterquestion]["OPCIJA3"],'F'], [qnad3[counterquestion]["OPCIJA4"],'F']]
+                dcao += 1
+            elif(counterquestion > 5 and counterquestion <= 10):
+                q = qnad6[counterquestion]["PITANJE"]
+                opcije = [[qnad6[counterquestion]["OPCIJA1"],'T'], [qnad6[counterquestion]["OPCIJA2"],'F'], [qnad6[counterquestion]["OPCIJA3"],'F'], [qnad6[counterquestion]["OPCIJA4"],'F']]
+                dcao += 1
+            elif(counterquestion > 10 and counterquestion <= 14):
+                q = qnad11[counterquestion]["PITANJE"]
+                opcije = [[qnad11[counterquestion]["OPCIJA1"],'T'], [qnad11[counterquestion]["OPCIJA2"],'F'], [qnad11[counterquestion]["OPCIJA3"],'F'], [qnad11[counterquestion]["OPCIJA4"],'F']]
+                dcao += 1
         if(shuffle):
             random.shuffle(opcije)
             shuffle = False
+
+        q_rect = pygame.Rect(240, 430, 1045-240, 480-420)
+        drawText(window, q, "white", q_rect, qafont, textAlignCenter, True)
 
         #o1 = qnad[r]["OPCIJA1"]
         o1_rect = pygame.Rect(224, 561, 594-224, 30)
@@ -328,7 +356,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock)
+                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -347,7 +375,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock)
+                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -366,7 +394,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock)
+                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -385,7 +413,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock)
+                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -411,9 +439,22 @@ def game(window, width, height, clock):
                         if posm[0] > 649 and posm[0] < 649+62 and posm[1] > 351 and posm[1] < 386 and h3 == False:
                             cc = 30
                             h3 = True
-                            pom = qnad[counterquestion]
-                            qnad[counterquestion] = qnad[15]
-                            qnad[15] = pom
+                            if(counterquestion <= 2):
+                                pom = qnad1[counterquestion]
+                                qnad1[counterquestion] = qnad1[15]
+                                qnad1[15] = pom
+                            elif(counterquestion > 2 and counterquestion <= 5):
+                                pom = qnad3[counterquestion]
+                                qnad3[counterquestion] = qnad3[15]
+                                qnad3[15] = pom
+                            elif(counterquestion > 5 and counterquestion <= 10):
+                                pom = qnad6[counterquestion]
+                                qnad6[counterquestion] = qnad6[15]
+                                qnad6[15] = pom
+                            elif(counterquestion > 10 and counterquestion <= 14):
+                                pom = qnad11[counterquestion]
+                                qnad11[counterquestion] = qnad11[15]
+                                qnad11[15] = pom
                             dcao = counterquestion
                             shuffle = True
                             starttime = pygame.time.get_ticks()
