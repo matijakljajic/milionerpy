@@ -72,7 +72,7 @@ def drawText(surface, text, color, rect, font, align=textAlignLeft, aa=True, bkg
         return remainingText
     return ""
 
-def Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije):
+def endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije):
     channel1.fadeout(5)
 
     endcard = pygame.image.load('resources/endcard/endcard.jpg')
@@ -181,13 +181,13 @@ def game(window, width, height, clock):
     text = timerfont.render(str(counterclock), True, (184, 193, 209))
 
     # question load
-    qna1 = pandas.read_excel("resources/pitanja.xlsx", "1", usecols = "A,B,C,D,E")
+    qna1 = pandas.read_excel("resources/pitanja.xlsx", "11", usecols = "A,B,C,D,E")
     qnad1 = qna1.to_dict('index')
-    qna3 = pandas.read_excel("resources/pitanja.xlsx", "3", usecols = "A,B,C,D,E")
+    qna3 = pandas.read_excel("resources/pitanja.xlsx", "6", usecols = "A,B,C,D,E")
     qnad3 = qna3.to_dict('index')
-    qna6 = pandas.read_excel("resources/pitanja.xlsx", "6", usecols = "A,B,C,D,E")
+    qna6 = pandas.read_excel("resources/pitanja.xlsx", "3", usecols = "A,B,C,D,E")
     qnad6 = qna6.to_dict('index')
-    qna11 = pandas.read_excel("resources/pitanja.xlsx", "11", usecols = "A,B,C,D,E")
+    qna11 = pandas.read_excel("resources/pitanja.xlsx", "1", usecols = "A,B,C,D,E")
     qnad11 = qna11.to_dict('index')
     random.shuffle(qnad1)
     random.shuffle(qnad3)
@@ -260,7 +260,7 @@ def game(window, width, height, clock):
             window.blit(currentq[14], (1107,51))
         elif(counterquestion < 14):
             window.blit(currentq[counterquestion], (1107,55))
-        else: Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+        else: endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
         
         if(counterquestion == dcao):
             if(counterquestion <= 2):
@@ -361,7 +361,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -380,7 +380,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -399,7 +399,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
@@ -418,7 +418,7 @@ def game(window, width, height, clock):
                                 channel2.play(false1, 0)
                                 while True:
                                     if not pygame.mixer.music.get_busy():
-                                        Endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
                                 w = True
