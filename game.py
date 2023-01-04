@@ -131,6 +131,10 @@ def game(window, width, height, clock):
     bg_music1 = pygame.mixer.Sound("resources/game/music/bg_music1.ogg")
     true1 = pygame.mixer.Sound("resources/game/music/true1.ogg")
     false1 = pygame.mixer.Sound("resources/game/music/false1.ogg")
+    h1ogg = pygame.mixer.Sound("resources/game/music/asktheaudience.ogg")
+    h2ogg = pygame.mixer.Sound("resources/game/music/50-50.ogg")
+    h3ogg = pygame.mixer.Sound("resources/game/music/switcharoo.ogg")
+    h4ogg = pygame.mixer.Sound("resources/game/music/doubletime.ogg")
 
     bg_img = pygame.image.load('resources/game/background.jpg')
     hover = pygame.image.load('resources/game/answer_hover/answer_hover.png')
@@ -222,6 +226,7 @@ def game(window, width, height, clock):
     # audio channel init
     channel1 = pygame.mixer.Channel(0)
     channel2 = pygame.mixer.Channel(1)
+    channel3 = pygame.mixer.Channel(2)
 
     channel1.play(bg_music1, -1)
 
@@ -423,11 +428,13 @@ def game(window, width, height, clock):
                                 channel1.unpause()
 
                         if posm[0] > 497 and posm[0] < 497+62 and posm[1] > 351 and posm[1] < 386 and h1 == False:
+                            channel3.play(h1ogg, 0)
                             graph = True
                             h1 = True
                             starttime = pygame.time.get_ticks()+1000 - (cc/2)*1000
                             Graph(opcije)
                         if posm[0] > 573 and posm[0] < 573+62 and posm[1] > 351 and posm[1] < 386 and h2 == False:
+                            channel3.play(h2ogg, 0)
                             h2 = True
                             rn = random.sample(opcije,2)
                             while rn[0][1]=='T' or rn[1][1]=='T':
@@ -437,6 +444,7 @@ def game(window, width, height, clock):
                                     opcije[i][0] = ''
                                 i+=1
                         if posm[0] > 649 and posm[0] < 649+62 and posm[1] > 351 and posm[1] < 386 and h3 == False:
+                            channel3.play(h3ogg, 0)
                             cc = 30
                             h3 = True
                             graph = False
@@ -460,6 +468,7 @@ def game(window, width, height, clock):
                             shuffle = True
                             starttime = pygame.time.get_ticks()
                         if posm[0] > 724 and posm[0] < 724+62 and posm[1] > 351 and posm[1] < 386 and h4 == False:
+                            channel3.play(h4ogg, 0)
                             h4 = True
                             cc = cc * 2 - (30 - counterclock)
 
