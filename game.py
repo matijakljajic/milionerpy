@@ -283,28 +283,28 @@ def game(window, width, height, clock):
 
         #o1 = qnad[r]["OPCIJA1"]
         o1_rect = pygame.Rect(224, 561, 594-224, 30)
-        if posm[0] > 224 and posm[0] < 594 and posm[1] > 561 and posm[1] < 591 and opcije[0][0] != '':
+        if posm[0] > 224 and posm[0] < 594 and posm[1] > 548 and posm[1] < 598 and opcije[0][0] != '':
             window.blit(hover, (200, 548))
             drawText(window, opcije[0][0], "black", o1_rect, qafont, textAlignCenter, True)
         else:
             drawText(window, opcije[0][0], "white", o1_rect, qafont, textAlignCenter, True)
         #o2 = qnad[r]["OPCIJA2"]
         o2_rect = pygame.Rect(224, 633, 594-224, 30)
-        if posm[0] > 224 and posm[0] < 594 and posm[1] > 633 and posm[1] < 663 and opcije[2][0] != '':
+        if posm[0] > 224 and posm[0] < 594 and posm[1] > 620 and posm[1] < 669 and opcije[2][0] != '':
             window.blit(hover, (200, 619))
             drawText(window, opcije[2][0], "black", o2_rect, qafont, textAlignCenter, True)
         else:
             drawText(window, opcije[2][0], "white", o2_rect, qafont, textAlignCenter, True)
         #o3 = qnad[r]["OPCIJA3"]
         o3_rect = pygame.Rect(690, 561, 594-224, 30)
-        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 561 and posm[1] < 591 and opcije[1][0] != '':
+        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 548 and posm[1] < 598 and opcije[1][0] != '':
             window.blit(hover, (664, 548))
             drawText(window, opcije[1][0], "black", o3_rect, qafont, textAlignCenter, True)
         else:
             drawText(window, opcije[1][0], "white", o3_rect, qafont, textAlignCenter, True)
         #o4 = qnad[r]["OPCIJA4"]
         o4_rect = pygame.Rect(690, 633, 594-224, 30)
-        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 633 and posm[1] < 663 and opcije[3][0] != '':
+        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 620 and posm[1] < 669 and opcije[3][0] != '':
             window.blit(hover, (664, 619))    
             drawText(window, opcije[3][0], "black", o4_rect, qafont, textAlignCenter, True)
         else:
@@ -345,7 +345,7 @@ def game(window, width, height, clock):
                     running = False
                 if event.type == MOUSEBUTTONDOWN:
                     if event.button == 1:
-                        if posm[0] > 224 and posm[0] < 594 and posm[1] > 561 and posm[1] < 591 and opcije[0][0] != '':
+                        if posm[0] > 224 and posm[0] < 594 and posm[1] > 548 and posm[1] < 598 and opcije[0][0] != '':
                             shuffle = True
                             counterquestion = counterquestion + 1
                             starttime = pygame.time.get_ticks()
@@ -364,7 +364,7 @@ def game(window, width, height, clock):
                                     if not pygame.mixer.music.get_busy():
                                         w = False
                                 channel1.unpause()
-                        if posm[0] > 224 and posm[0] < 594 and posm[1] > 633 and posm[1] < 663 and opcije[2][0] != '':
+                        if posm[0] > 224 and posm[0] < 594 and posm[1] > 620 and posm[1] < 669 and opcije[2][0] != '':
                             shuffle = True
                             counterquestion = counterquestion + 1
                             starttime = pygame.time.get_ticks()
@@ -383,7 +383,7 @@ def game(window, width, height, clock):
                                     if not pygame.mixer.music.get_busy():
                                         w = False
                                 channel1.unpause()
-                        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 561 and posm[1] < 591 and opcije[1][0] != '':
+                        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 548 and posm[1] < 598 and opcije[1][0] != '':
                             shuffle = True
                             counterquestion = counterquestion + 1
                             starttime = pygame.time.get_ticks()
@@ -402,7 +402,7 @@ def game(window, width, height, clock):
                                     if not pygame.mixer.music.get_busy():
                                         w = False
                                 channel1.unpause()
-                        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 633 and posm[1] < 663 and opcije[3][0] != '':
+                        if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 620 and posm[1] < 669 and opcije[3][0] != '':
                             shuffle = True
                             counterquestion = counterquestion + 1
                             starttime = pygame.time.get_ticks()
@@ -439,6 +439,7 @@ def game(window, width, height, clock):
                         if posm[0] > 649 and posm[0] < 649+62 and posm[1] > 351 and posm[1] < 386 and h3 == False:
                             cc = 30
                             h3 = True
+                            graph = False
                             if(counterquestion <= 2):
                                 pom = qnad1[counterquestion]
                                 qnad1[counterquestion] = qnad1[15]
