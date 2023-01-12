@@ -9,7 +9,7 @@ A rendition of the popular TV quiz "Who wants to be a millionaire?" for one of t
 
 The project was at first based on the Serbian TV quiz called "Slagalica" and its game "Ko zna zna" but during development, some altercations did indeed occur and it couldn't be submitted for grading unfortunately. That project can be found at this [link](https://github.com/matijakljajic/koznaznarevamp).
 
-*If you want to read the official paper behind this work, you can do so over this [link]().*
+*If you want to read the official paper behind this work, you can do so over this [link](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf).*
 
 
 ## How to run

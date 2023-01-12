@@ -9,7 +9,7 @@ Verzija popularnog TV kviza "Želite li da postanete milioner?" za fakultetski p
 
 Projekat je prvo zasnovan na igri "Ko zna zna" iz TV Slagalice ali projekat kao takav nije mogao da zadovolji sve uslove rada i nije mogao da se preda nažalost. Taj projekat možete da pronađete na ovom [linku](https://github.com/matijakljajic/koznaznarevamp).
 
-*Ako hoćete da pročitate seminarski rad od ovog projekta, možete da uradite to preko ovog [linka]().*
+*Ako hoćete da pročitate seminarski rad od ovog projekta, možete da uradite to preko ovog [linka](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf).*
 
 
 ## Kako pokrenuti program
