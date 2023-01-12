@@ -6,7 +6,7 @@ import matplotlib
 matplotlib.use('module://pygame_matplotlib.backend_pygame')
 import matplotlib.pyplot as plt
 
-def Graph(opcije):
+def makegraph(opcije):
     t = random.randrange(42, 88)
     f1 = random.randrange(0,12)
     f2 = (100 - (t + f1)) // random.randrange(1,4)
@@ -35,5 +35,5 @@ def Graph(opcije):
     ax.tick_params(axis='y', colors='#ea8a00')
     ax.spines[['left','right','top','bottom']].set_color('#ea8a00')
     ax.set_facecolor('#1e2633')
-
+    
     plt.savefig('resources/figure.png')

@@ -245,11 +245,9 @@ def game(window, width, height, clock):
     while running:
         posm = pygame.mouse.get_pos()
         counterclock = cc - (pygame.time.get_ticks()-starttime)/1000
-        if int(counterclock) > 0:
+        if int(counterclock) >= 0:
             text = timerfont.render(str(int(counterclock)), True, (184, 193, 209))
-        elif int(counterclock) == 0:
-            text = timerfont.render("0", True, (184, 193, 209))
-        else: exit()
+        else: endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
 
         window.blit(bg_img,(0,0))
         text_rect = text.get_rect (center = (width // 2, 200))
@@ -266,19 +264,16 @@ def game(window, width, height, clock):
             if(counterquestion <= 2):
                 q = qnad1[counterquestion]["PITANJE"]
                 opcije = [[qnad1[counterquestion]["OPCIJA1"],'T'], [qnad1[counterquestion]["OPCIJA2"],'F'], [qnad1[counterquestion]["OPCIJA3"],'F'], [qnad1[counterquestion]["OPCIJA4"],'F']]
-                dcao += 1
             elif(counterquestion > 2 and counterquestion <= 5):
                 q = qnad3[counterquestion]["PITANJE"]
                 opcije = [[qnad3[counterquestion]["OPCIJA1"],'T'], [qnad3[counterquestion]["OPCIJA2"],'F'], [qnad3[counterquestion]["OPCIJA3"],'F'], [qnad3[counterquestion]["OPCIJA4"],'F']]
-                dcao += 1
             elif(counterquestion > 5 and counterquestion <= 10):
                 q = qnad6[counterquestion]["PITANJE"]
                 opcije = [[qnad6[counterquestion]["OPCIJA1"],'T'], [qnad6[counterquestion]["OPCIJA2"],'F'], [qnad6[counterquestion]["OPCIJA3"],'F'], [qnad6[counterquestion]["OPCIJA4"],'F']]
-                dcao += 1
             elif(counterquestion > 10 and counterquestion <= 14):
                 q = qnad11[counterquestion]["PITANJE"]
                 opcije = [[qnad11[counterquestion]["OPCIJA1"],'T'], [qnad11[counterquestion]["OPCIJA2"],'F'], [qnad11[counterquestion]["OPCIJA3"],'F'], [qnad11[counterquestion]["OPCIJA4"],'F']]
-                dcao += 1
+            dcao += 1
         if(shuffle):
             random.shuffle(opcije)
             shuffle = False
@@ -343,7 +338,7 @@ def game(window, width, height, clock):
                 window.blit(quith,(1106,12))
         else: window.blit(quita,(1106,12))
 
-        pygame.display.flip()
+        pygame.display.update()
 
         for event in pygame.event.get():
                 if event.type == QUIT:
@@ -359,15 +354,9 @@ def game(window, width, height, clock):
                             channel1.pause()
                             if opcije[0][1] == 'F':
                                 channel2.play(false1, 0)
-                                while True:
-                                    if not pygame.mixer.music.get_busy():
-                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
-                                w = True
-                                while w:
-                                    if not pygame.mixer.music.get_busy():
-                                        w = False
                                 channel1.unpause()
                         if posm[0] > 224 and posm[0] < 594 and posm[1] > 620 and posm[1] < 669 and opcije[2][0] != '':
                             shuffle = True
@@ -378,15 +367,9 @@ def game(window, width, height, clock):
                             channel1.pause()
                             if opcije[2][1] == 'F':
                                 channel2.play(false1, 0)
-                                while True:
-                                    if not pygame.mixer.music.get_busy():
-                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
-                                w = True
-                                while w:
-                                    if not pygame.mixer.music.get_busy():
-                                        w = False
                                 channel1.unpause()
                         if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 548 and posm[1] < 598 and opcije[1][0] != '':
                             shuffle = True
@@ -397,15 +380,9 @@ def game(window, width, height, clock):
                             channel1.pause()
                             if opcije[1][1] == 'F':
                                 channel2.play(false1, 0)
-                                while True:
-                                    if not pygame.mixer.music.get_busy():
-                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
-                                w = True
-                                while w:
-                                    if not pygame.mixer.music.get_busy():
-                                        w = False
                                 channel1.unpause()
                         if posm[0] > 690 and posm[0] < 690+(594-224) and posm[1] > 620 and posm[1] < 669 and opcije[3][0] != '':
                             shuffle = True
@@ -416,15 +393,9 @@ def game(window, width, height, clock):
                             channel1.pause()
                             if opcije[3][1] == 'F':
                                 channel2.play(false1, 0)
-                                while True:
-                                    if not pygame.mixer.music.get_busy():
-                                        endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
+                                endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije)
                             else:
                                 channel2.play(true1, 0)
-                                w = True
-                                while w:
-                                    if not pygame.mixer.music.get_busy():
-                                        w = False
                                 channel1.unpause()
 
                         if posm[0] > 497 and posm[0] < 497+62 and posm[1] > 351 and posm[1] < 386 and h1 == False:
@@ -432,7 +403,7 @@ def game(window, width, height, clock):
                             graph = True
                             h1 = True
                             starttime = pygame.time.get_ticks()+1000 - (cc/2)*1000
-                            Graph(opcije)
+                            makegraph(opcije)
                         if posm[0] > 573 and posm[0] < 573+62 and posm[1] > 351 and posm[1] < 386 and h2 == False:
                             channel3.play(h2ogg, 0)
                             h2 = True
@@ -442,7 +413,6 @@ def game(window, width, height, clock):
                             for i in range(0, len(opcije)):
                                 if(rn[0] == opcije[i] or rn[1] == opcije[i]):
                                     opcije[i][0] = ''
-                                i+=1
                         if posm[0] > 649 and posm[0] < 649+62 and posm[1] > 351 and posm[1] < 386 and h3 == False:
                             channel3.play(h3ogg, 0)
                             cc = 30
