@@ -27,6 +27,11 @@ Projekat je prvo zasnovan na igri "Ko zna zna" iz TV Slagalice ali projekat kao 
 - Otvorite main.py i pokrenite igricu
 
 
+## Snimci ekrana
+
+<p align="center"><img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/intro.png" width="256" height="144" alt="intro">  <img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/game.png" width="256" height="144" alt="game">  <img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/graph.png" width="256" height="144" alt="graph"></p>
+
+
 ## Manuelno menjanje liste pitanja
 
 Pitanja koja igrica koristi mogu biti menjana naknadno kroz "pitanja.xlsx". Međutim, sledeći šablon mora biti korišćen u svakom redu i prvi red se ne sme menjati:

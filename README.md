@@ -29,6 +29,11 @@ The project was at first based on the Serbian TV quiz called "Slagalica" and its
 - Open main.py and run
 
 
+## Screenshots
+
+<p align="center"><img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/intro.png" width="256" height="144" alt="intro">  <img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/game.png" width="256" height="144" alt="game">  <img src="https://raw.githubusercontent.com/matijakljajic/milionerpy/main/screenshots/graph.png" width="256" height="144" alt="graph"></p>
+
+
 ## Updating the question list manually
 
 Questions that the game uses can be updated through "pitanja.xlsx". Following template in each row must be used and the first row mustn't be changed:
