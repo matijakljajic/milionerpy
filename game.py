@@ -1,3 +1,5 @@
+import sys
+
 # basic func imports
 import numpy
 import pandas
@@ -124,7 +126,7 @@ def endcard(pygame, window, width, height, counterquestion, channel1, clock, opc
                             game(window, width, height, clock)
                         if posm[0] > 534 and posm[0] < 745 and posm[1] > 520 and posm[1] < 551:
                             pygame.quit()
-                            exit()
+                            sys.exit()
 
 def game(window, width, height, clock):
     # resource load
@@ -443,4 +445,4 @@ def game(window, width, height, clock):
                             cc = cc * 2 - (30 - counterclock)
 
                         if posm[0] > 1106 and posm[0] < 1106+143 and posm[1] > 12 and posm[1] < 12 + 24:
-                            exit()
+                            sys.exit()
