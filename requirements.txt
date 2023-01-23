@@ -3,3 +3,4 @@ openpyxl
 pandas
 pygame
 matplotlib
+pygame_matplotlib
