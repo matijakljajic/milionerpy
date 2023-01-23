@@ -3,7 +3,7 @@
   <h1 align="center" style="margin: 0 auto 0 auto;">ŽELITE LI DA POSTANETE MILIONER?</h1>
   </p>
 
-[![🇬🇧](https://img.shields.io/badge/🇬🇧-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)]()
+[![🇬🇧](https://img.shields.io/badge/🇬🇧-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
 
 Verzija popularnog TV kviza "Želite li da postanete milioner?" za fakultetski predmet "Seminarski rad A". Sama igrica i sva pitanja su na srpskom. Pitanja su zapravo uzeta od jedne starije verzije iste igre koja je napravljena početkom 2000-ih tako da se nadam da će vam se svideti.
 
