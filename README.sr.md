@@ -18,7 +18,7 @@ Projekat je prvo zasnovan na igri "Ko zna zna" iz TV Slagalice ali projekat kao 
 
 - Preuzmite "executable" fajl preko "download" dugmeta na vrhu ovog README-a
 - Instalirajte program (Preporučljivo je da ostavite početnu lokaciju instalacije, možete sve deinstalirati preko kontrolne table)
-- Pokrenite igricu
+- Pokrenite igricu kao administrator
 
 ### Preko koda
 

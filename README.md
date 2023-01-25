@@ -18,7 +18,7 @@ The project was at first based on the Serbian TV quiz called "Slagalica" and its
 
 - Download the executable over the download button at the top of this README
 - Install the program (It's preferable if you leave the default installation location, you can uninstall over control panel later if you want)
-- Run
+- Run as administrator
 
 <sub>(When updating, it is recommended to uninstall the old version before installing the new one. You can ignore this  recommendation if you find it inconvenient)</sub>
 
