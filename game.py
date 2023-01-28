@@ -77,11 +77,11 @@ def drawText(surface, text, color, rect, font, align=textAlignLeft, aa=True, bkg
 def endcard(pygame, window, width, height, counterquestion, channel1, clock, opcije):
     channel1.fadeout(5)
 
-    endcard = pygame.image.load('resources/endcard/endcard.jpg')
-    tryagaina = pygame.image.load('resources/endcard/tryagaina.png')
-    tryagainh = pygame.image.load('resources/endcard/tryagainh.png')
-    closea = pygame.image.load('resources/endcard/exita.png')
-    closeh = pygame.image.load('resources/endcard/exith.png')
+    endcard = pygame.image.load('resources/endcard/endcard.jpg').convert_alpha()
+    tryagaina = pygame.image.load('resources/endcard/tryagaina.png').convert_alpha()
+    tryagainh = pygame.image.load('resources/endcard/tryagainh.png').convert_alpha()
+    closea = pygame.image.load('resources/endcard/exita.png').convert_alpha()
+    closeh = pygame.image.load('resources/endcard/exith.png').convert_alpha()
     font = pygame.font.Font("resources/Rubik.ttf", 30)
 
     for i in range(0, len(opcije)):
@@ -138,40 +138,40 @@ def game(window, width, height, clock):
     h3ogg = pygame.mixer.Sound("resources/game/music/switcharoo.ogg")
     h4ogg = pygame.mixer.Sound("resources/game/music/doubletime.ogg")
 
-    bg_img = pygame.image.load('resources/game/background.jpg')
-    hover = pygame.image.load('resources/game/answer_hover/answer_hover.png')
+    bg_img = pygame.image.load('resources/game/background.jpg').convert_alpha()
+    hover = pygame.image.load('resources/game/answer_hover/answer_hover.png').convert_alpha()
 
-    help1a = pygame.image.load('resources/game/help/asktheaudience/asktheaudience.png')
-    help1h = pygame.image.load('resources/game/help/asktheaudience/asktheaudience_hover.png')
-    help1c = pygame.image.load('resources/game/help/asktheaudience/asktheaudience_c.png')
-    help2a = pygame.image.load('resources/game/help/50-50/50-50.png')
-    help2h = pygame.image.load('resources/game/help/50-50/50-50_hover.png')
-    help2c = pygame.image.load('resources/game/help/50-50/50-50_c.png')
-    help3a = pygame.image.load('resources/game/help/switcharoo/switcharoo.png')
-    help3h = pygame.image.load('resources/game/help/switcharoo/switcharoo_hover.png')
-    help3c = pygame.image.load('resources/game/help/switcharoo/switcharoo_c.png')
-    help4a = pygame.image.load('resources/game/help/doubletime/doubletime.png')
-    help4h = pygame.image.load('resources/game/help/doubletime/doubletime_hover.png')
-    help4c = pygame.image.load('resources/game/help/doubletime/doubletime_c.png')
+    help1a = pygame.image.load('resources/game/help/asktheaudience/asktheaudience.png').convert_alpha()
+    help1h = pygame.image.load('resources/game/help/asktheaudience/asktheaudience_hover.png').convert_alpha()
+    help1c = pygame.image.load('resources/game/help/asktheaudience/asktheaudience_c.png').convert_alpha()
+    help2a = pygame.image.load('resources/game/help/50-50/50-50.png').convert_alpha()
+    help2h = pygame.image.load('resources/game/help/50-50/50-50_hover.png').convert_alpha()
+    help2c = pygame.image.load('resources/game/help/50-50/50-50_c.png').convert_alpha()
+    help3a = pygame.image.load('resources/game/help/switcharoo/switcharoo.png').convert_alpha()
+    help3h = pygame.image.load('resources/game/help/switcharoo/switcharoo_hover.png').convert_alpha()
+    help3c = pygame.image.load('resources/game/help/switcharoo/switcharoo_c.png').convert_alpha()
+    help4a = pygame.image.load('resources/game/help/doubletime/doubletime.png').convert_alpha()
+    help4h = pygame.image.load('resources/game/help/doubletime/doubletime_hover.png').convert_alpha()
+    help4c = pygame.image.load('resources/game/help/doubletime/doubletime_c.png').convert_alpha()
         
-    quita = pygame.image.load('resources/game/quit/quit.png')
-    quith = pygame.image.load('resources/game/quit/quit_hover.png')
+    quita = pygame.image.load('resources/game/quit/quit.png').convert_alpha()
+    quith = pygame.image.load('resources/game/quit/quit_hover.png').convert_alpha()
 
-    currentq = [pygame.image.load('resources/game/currentq/currentq_1.png'),
-        pygame.image.load('resources/game/currentq/currentq_2.png'),
-        pygame.image.load('resources/game/currentq/currentq_3.png'),
-        pygame.image.load('resources/game/currentq/currentq_4.png'),
-        pygame.image.load('resources/game/currentq/currentq_5.png'),
-        pygame.image.load('resources/game/currentq/currentq_6.png'),
-        pygame.image.load('resources/game/currentq/currentq_7.png'),
-        pygame.image.load('resources/game/currentq/currentq_8.png'),
-        pygame.image.load('resources/game/currentq/currentq_9.png'),
-        pygame.image.load('resources/game/currentq/currentq_10.png'),
-        pygame.image.load('resources/game/currentq/currentq_11.png'),
-        pygame.image.load('resources/game/currentq/currentq_12.png'),
-        pygame.image.load('resources/game/currentq/currentq_13.png'),
-        pygame.image.load('resources/game/currentq/currentq_14.png'),
-        pygame.image.load('resources/game/currentq/currentq_15.png')]
+    currentq = [pygame.image.load('resources/game/currentq/currentq_1.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_2.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_3.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_4.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_5.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_6.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_7.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_8.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_9.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_10.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_11.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_12.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_13.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_14.png').convert_alpha(),
+        pygame.image.load('resources/game/currentq/currentq_15.png').convert_alpha()]
 
     # font load
     timerfont = pygame.font.Font("resources/Rubik.ttf", 130)
@@ -334,7 +334,7 @@ def game(window, width, height, clock):
         else: window.blit(help4c,(724,351))
 
         if h1 == True and graph == True:
-            window.blit(pygame.image.load('resources/figure.png'), (6,3))
+            window.blit(pygame.image.load('resources/figure.png').convert_alpha(), (6,3))
 
         if posm[0] > 1106 and posm[0] < 1106+143 and posm[1] > 12 and posm[1] < 12 + 24:
                 window.blit(quith,(1106,12))
