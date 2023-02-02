@@ -5,7 +5,7 @@
 
 [![🇷🇸](https://img.shields.io/badge/🇷🇸-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.sr.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
 
-A rendition of the popular TV quiz "Who wants to be a millionaire?" for one of the uni courses called "Seminarski rad A". The game and the questions are in Serbian. All questions were actually imported from a 2000s version of the game so I hope you like it.
+A rendition of the popular TV quiz "[Who wants to be a millionaire?](https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire%3F)" for one of the uni courses called "Seminarski rad A". The game and the questions are in Serbian. All questions were actually imported from a 2000s version of the game so I hope you like it.
 
 The project was at first based on the Serbian TV quiz called "Slagalica" and its game "Ko zna zna" but during development, some altercations did indeed occur and it couldn't be submitted for grading unfortunately. That project can be found at this [link](https://github.com/matijakljajic/koznaznarevamp).
 
