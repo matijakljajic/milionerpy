@@ -7,7 +7,7 @@
 
 Verzija popularnog TV kviza "[Želite li da postanete milioner?](https://sh.wikipedia.org/wiki/%C5%BDelite_li_da_postanete_milioner%3F)" za fakultetski predmet "Seminarski rad A". Sama igrica i sva pitanja su na srpskom. Pitanja su zapravo uzeta od jedne starije verzije iste igre koja je napravljena početkom 2000-ih tako da se nadam da će vam se svideti.
 
-Projekat je prvo zasnovan na igri "Ko zna zna" iz TV Slagalice ali projekat kao takav nije mogao da zadovolji sve uslove rada i nije mogao da se preda nažalost. Taj projekat možete da pronađete na ovom [linku](https://github.com/matijakljajic/koznaznarevamp).
+Projekat je prvo zasnovan na igri "Ko zna zna" iz [TV Slagalice](https://sr.wikipedia.org/sr-el/%D0%A2%D0%92_%D1%81%D0%BB%D0%B0%D0%B3%D0%B0%D0%BB%D0%B8%D1%86%D0%B0) ali projekat kao takav nije mogao da zadovolji sve uslove rada i nije mogao da se preda nažalost. Taj projekat možete da pronađete na ovom [linku](https://github.com/matijakljajic/koznaznarevamp).
 
 *Ako hoćete da pročitate seminarski rad od ovog projekta, možete da uradite to preko ovog [linka](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf).*
 
