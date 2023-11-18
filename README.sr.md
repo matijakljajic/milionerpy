@@ -3,14 +3,15 @@
   <h1 align="center" style="margin: 0 auto 0 auto;">ŽELITE LI DA POSTANETE MILIONER?</h1>
   </p>
 
-[![🇬🇧](https://img.shields.io/badge/🇬🇧-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
+[![EN](https://img.shields.io/badge/EN-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
 
-Verzija popularnog TV kviza "[Želite li da postanete milioner?](https://sh.wikipedia.org/wiki/%C5%BDelite_li_da_postanete_milioner%3F)" za fakultetski predmet "Seminarski rad A". Sama igrica i sva pitanja su na srpskom. Pitanja su zapravo uzeta od jedne starije verzije iste igre koja je napravljena početkom 2000-ih tako da se nadam da će vam se svideti.
+Verzija popularnog TV kviza "[Želite li da postanete milioner?](https://sh.wikipedia.org/wiki/%C5%BDelite_li_da_postanete_milioner%3F)" za fakultetski predmet "Seminarski rad A". Sama igrica i sva pitanja su na srpskom. Pitanja su preuzeta od starije verzije iste igre koja je napravljena početkom 2000-ih u Java okruženju.
 
 Projekat je prvo zasnovan na igri "Ko zna zna" iz [TV Slagalice](https://sr.wikipedia.org/sr-el/%D0%A2%D0%92_%D1%81%D0%BB%D0%B0%D0%B3%D0%B0%D0%BB%D0%B8%D1%86%D0%B0) ali projekat kao takav nije mogao da zadovolji sve uslove rada i nije mogao da se preda nažalost. Taj projekat možete da pronađete na ovom [linku](https://github.com/matijakljajic/koznaznarevamp).
 
 *Ako hoćete da pročitate seminarski rad od ovog projekta, možete da uradite to preko ovog [linka](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf).*
 
+***Ovaj repozitorijum je arhiviran tako da ova verzija igre neće imati nikakvih dodatnih promena.***
 
 ## Kako pokrenuti program
 
@@ -38,10 +39,14 @@ Pitanja koja igrica koristi mogu biti menjana naknadno kroz "pitanja.xlsx". Međ
 
 `VAŠE PITANJE | TAČAN ODGOVOR | 1. NETAČAN ODGOVOR | 2. NETAČAN ODGOVOR | 3. NETAČAN ODGOVOR`
 
+<br>
+<div align="center">
+
 <details>
 <summary>
-Hvala mnogo svim ovim ljudima koji su doprineli u kreiranju pitanja
+<b>Hvala mnogo svim ovim ljudima koji su doprineli u kreiranju pitanja</b>
 </summary>
+<br>
 
 Name | Email
 :---:|:---:
@@ -127,8 +132,10 @@ Strahinja Petrović | sm.astra@neobee.net
 ~ | vessna_yu@yahoo.com
 ~ | becej@EUnet.yu
 ~ | edo16@lsinter.net
+
 </details>
 
+</div>
 
 ##
 <sup>Ovaj rad nema nameru da krši bilo kakva autorska prava. Autorska prava nad simbolima vezana za kviz "Želite li da postanete milioner?" drži ekipa iza oficijalnog kviza.</sup>

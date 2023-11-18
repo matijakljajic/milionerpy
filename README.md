@@ -3,14 +3,15 @@
   <h1 align="center" style="margin: 0 auto 0 auto;">ŽELITE LI DA POSTANETE MILIONER?</h1>
   </p>
 
-[![🇷🇸](https://img.shields.io/badge/🇷🇸-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.sr.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![project](https://img.shields.io/badge/project-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/milionerpy/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
+[![SR](https://img.shields.io/badge/SR-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/blob/main/README.sr.md) [![portfolio](https://img.shields.io/badge/portfolio-2ea44f?style=for-the-badge)](https://matijakljajic.github.io/) [![Download](https://img.shields.io/badge/Download-2ea44f?style=for-the-badge)](https://github.com/matijakljajic/milionerpy/releases/download/2023.01.23/Milioner20230123.exe)
 
-A rendition of the popular TV quiz "[Who wants to be a millionaire?](https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire%3F)" for one of the uni courses called "Seminarski rad A". The game and the questions are in Serbian. All questions were actually imported from a 2000s version of the game so I hope you like it.
+A rendition of the popular TV quiz "[Who wants to be a millionaire?](https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire%3F)" for one of the uni courses called "Seminarski rad A". The game and the questions are in Serbian. All questions were imported from an earlier version of the game done around 2002/03.
 
 The project was at first based on the Serbian TV quiz called "[Slagalica](https://en.wikipedia.org/wiki/TV_Slagalica)" and its game "Ko zna zna" but during development, some altercations did indeed occur and it couldn't be submitted for grading unfortunately. That project can be found at this [link](https://github.com/matijakljajic/koznaznarevamp).
 
-*If you want to read the official paper behind this work, you can do so over this [link](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf).*
+*If you want to read the official paper behind this work, you can do so over this [link](https://raw.githubusercontent.com/matijakljajic/milionerpy/main/Skript%20jezici%20-%20Seminarski%20rad%20A.pdf). (It's in Serbian)*
 
+***This repository is archived thus it won't be getting any updates.***
 
 ## How to run
 
@@ -40,10 +41,14 @@ Questions that the game uses can be updated through "pitanja.xlsx". Following te
 
 `YOUR QUESTION | THE RIGHT ANSWER | FIRST WRONG ANSWER | SECOND WRONG ANSWER | THIRD WRONG ANSWER`
 
+<br>
+<div align="center">
+
 <details>
 <summary>
-A big thanks to all these people who made the questions
+<b>A big thanks to all these people who made the questions</b>
 </summary>
+<br>
 
 Name | Email
 :---:|:---:
@@ -129,8 +134,10 @@ Strahinja Petrović | sm.astra@neobee.net
 ~ | vessna_yu@yahoo.com
 ~ | becej@EUnet.yu
 ~ | edo16@lsinter.net
+
 </details>
 
+</div>
 
 ##
 <sup>This work does not intend to infringe any copyrights. The copyright holder to any symbols related to the TV quiz is the team behind the official quiz.</sup>
