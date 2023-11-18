@@ -1,0 +1,90 @@
+Question contributors for the original J2ME game
+Source: original contributor list
+Note: "~" means the original source did not include a name or email.
+
++-----------------------+--------------------------------+
+| Name                  | Email                          |
++-----------------------+--------------------------------+
+| Barbara Lučić         | barbara@telekom.yu             |
+| Milika Delić          | milika@eunet.yu                |
+| Radomir Lopusina      | ~                              |
+| Danko Vasiljević      | ayrton@bitsyu.net              |
+| Ines                  | ines@ptt.yu                    |
+| Olja                  | lavica.o@EUnet.yu              |
+| Bojan Bojcetić        | marat@EUnet.yu                 |
+| Marko Pavlović        | ~                              |
+| Daniel Keleman        | ~                              |
+| Željko Vejnović       | ~                              |
+| Aleksandar Mitić      | ~                              |
+| Nebojša Tmusić        | ~                              |
+| Milan Raonić          | ~                              |
+| Bojan                 | mbojan@drenik.net              |
+| Milan Dobri           | mdobri@infosky.net             |
+| Laki                  | mikovic@nspoint.net            |
+| Srđan                 | mlaz@ptt.yu                    |
+| Marko Nikolić         | mmarkoni@sezampro.yu           |
+| Predrag Petrović      | pedjolino_p@yahoo.com          |
+| Stefan Petrović       | snakepit@musician.org          |
+| Vesna Suknović        | ~                              |
+| Živko Pantović        | ~                              |
+| Slaviša Nenadić       | slavko6@ptt.yu                 |
+| ~                     | mmajstor@tesla.rcub.bg.ac.yu   |
+| Vladimir Marković     | vmarkovic@beotel.yu            |
+| Dragana Žižić         | ~                              |
+| Raco                  | racoyes@yahoo.com              |
+| Ernest Kovač          | ernest_utd@yahoo.com           |
+| Milan Kukić           | mkukic@hemo.net                |
+| Žarko Mihajlović      | developer@beotel.net           |
+| Mija                  | zanatcentar@ptt.yu             |
+| Boban                 | slobodancu@telekom.yu          |
+| ~                     | majski@ptt.yu                  |
+| Milan Kujundžić       | mkujundzic@novosti.co.yu       |
+| Gjorgji Petkovski     | koko@elektrosoft.com.mk        |
+| Blagoje Lazić         | lazic15@ptt.yu                 |
+| Miroslav Đovćoš       | mdjovcos@ddor.co.yu            |
+| ~                     | stellamaris@cg.yu              |
+| Peđa Rodić            | prodic@ptt.yu                  |
+| Krle                  | ~                              |
+| Ivan Milenković       | skijumpingworld@yahoo.com      |
+| Veselin Sekulović     | ~                              |
+| Rade Zrnić            | 100ka@mail.ru                  |
+| Ana                   | mina2u@InfoSky.net             |
+| Bojan Veličković      | vela@dma.co.yu                 |
+| ~                     | vesavesa@beotel.yu             |
+| ~                     | nickola@EUnet.yu               |
+| Marko Bežulj          | markone@Panet.co.yu            |
+| Jelena Marinković     | jelena01@EUnet.yu              |
+| ~                     | anelej@bankerinter.net         |
+| Zvonko Popović        | popovicmn@ptt.yu               |
+| Tomislav Tomašević    | tomastom@ptt.yu                |
+| Marko Misiraća        | marko@mediaproline.net         |
+| Ernest                | ernestutd@neobee.net           |
+| Ivan Dobrić           | zacinc@beotel.yu               |
+| Goran Stojanović      | batagogi@ptt.yu                |
+| Aca Vesić             | vesica@ptt.yu                  |
+| Slobodan Kitanović    | kids78@ptt.yu                  |
+| ~                     | dandm@panet.co.yu              |
+| Srđan Lukić           | schef@sdu.org.yu               |
+| Dragan Solak          | dsolak@voban.co.yu             |
+| Nikola Ćosović        | nix007@verat.net               |
+| Goran Janjić          | janke@teleport.co.yu           |
+| Ivica                 | Jastreb@ptt.yu                 |
+| ~                     | ljupce1@ptt.yu                 |
+| Jasna Janković        | jasna_jankovic@yahoo.com       |
+| ~                     | seria013@panet.co.yu           |
+| ~                     | dsansa@EUnet.yu                |
+| Srđan Janković        | srka@EUnet.yu                  |
+| Vlada                 | bvlada17@verat.net             |
+| Danilo                | danilov@teol.net               |
+| Nikola Popović        | nikolap@teol.net               |
+| Mirsad Kalamperović   | kalamperovicm@cg.yu            |
+| ~                     | bhamby@sezampro.yu             |
+| ~                     | jovance15@mail.net.mk          |
+| Ivan Dobrić           | zacinc@beotel.yu               |
+| Nikola                | necropolis@ptt.yu              |
+| Maja Radovanović      | rmaja@rstel.net                |
+| Strahinja Petrović    | sm.astra@neobee.net            |
+| ~                     | vessna_yu@yahoo.com            |
+| ~                     | becej@EUnet.yu                 |
+| ~                     | edo16@lsinter.net              |
++-----------------------+--------------------------------+
